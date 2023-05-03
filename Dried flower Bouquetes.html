@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+      
+        <title> 
+            Dried flower Bouquets
+        </title>
+        <title>footer</title>
+        <link rel="stylesheet" href="style.css">
+        <body>
+          <!---time-->
+          <body onload="startTime()">
+            <b><div id="txt"></div></b>
+            <script>
+            function startTime() {
+              const today = new Date();
+              let h = today.getHours();
+              let m = today.getMinutes();
+              let s = today.getSeconds();
+              m = checkTime(m);
+              s = checkTime(s);
+              document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+              setTimeout(startTime, 1000);
+            }
+            
+            function checkTime(i) {
+              if (i < 10) {i = "0" + i};  
+              return i;
+            }
+            </script>
+            </body>
+            <!---time-->
+            <!--home page-->
+        <div class="banner">
+              <div class="navbar">
+               <img src= "logo.png" class="logo">
+                    <ul>
+                      <li><a href="#collection">collection</a></li>
+                      <li><a href="#cat">category</a></li>
+                      <li><a href="#talk">Let's talk</a></li>
+                      <li><a href="shop now.html">shop</a></li>
+
+                    </ul>    
+              </div>
+        </div>  
+             <div class="content">
+                <h1 class="h1"> DRIED FLOWER BOUQUETES </h1>
+                <P class="p">Make a Bouquet and pick up a gift with <br> your wishes. Deliverd to any corner of the city.</P>
+              <div>
+                <button type="button"><span></span>Find Your Bouquet</button> 
+              </div>
+              </div>
+              </div>
+              <!--collection-->
+              <div class="store" id="collection">
+                <p> Choose your favourite section</p>
+              </div> 
+              <section class="container">
+                <div class="card">
+                  <div class="card-image  ">
+                    <img src="store 1.jpeg">
+                  </div>
+                  <h2>Custom Bouquets</h2>
+                  <p>Do you have an occasion taste ? from your fav flowers to the rarest hidden secrets, we have what you need.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                      <img src="store2.jpeg">
+                    </div>
+                    <h2>Occasion Flowers</h2>
+                    <p>Fav flowers for your special day or the perfect decoration for your next business event.</p>
+                </div>
+                <div class="card">
+                      <div class="card-image">
+                        <img src="store 3.jpeg">
+                      </div>
+                      <h2>Premade Bouquets</h2>
+                      <p>Our florists are bassionate about creating the most beautiful combinations of selescted dried flowers.</p>
+                </div>
+              </section>
+              <!--collection-->
+              <!--login form-->
+              <form class="box" action="index.html"method="post">
+                <h1>LogIn</h1>
+                <input type="text" name=""placeholder="username">
+                <input type="password" name=""placeholder="password">
+                <input type="submit" name=""value="Login">
+              </form>
+              <!--login form-->
+              <!--category-->
+          <div class ="row">
+            <div class ="col">
+              <h1> see what's popular</h1>
+            </div>
+          <div class="coll" id="cat">
+          <div class="col1">
+             <div class= "cards card1">
+               <h5> Gifts</h5> 
+             </div>
+          </div>
+          <div class="col1">
+              <div class= "cards card2">
+                <h5> table arrangment</h5>  
+              </div>
+          </div>
+          </div>
+          <div class="colll">
+           <div class="col2">
+                <div class= "cards card3">
+                  <h5> Occasional</h5>
+                </div>
+           </div>
+           <div class="col2">
+                  <div class= "cards card4">
+                    <h5> bridal Bouquet</h5>
+                  </div>
+           </div>
+          </div>
+          
+           </div>
+          </div>
+             <!--category-->
+             <!--lets talk-->
+            <section class="talk" id="talk">
+              <div class ="main">
+               <img src="talk1.png">
+               <div class="talk-text">
+                <h1>
+                  Talk to <br>our staff
+                </h1>
+                <p> Trouble choosing your bouquet?<br> Talk to our friendly customer service who can help you along your journey to finding your dream bouquet.<br> We are a long line of passionate florists and believe that everyone has their right bouquet.</p>
+                <div><button type="btn"><span></span>let's talk</button></div>
+               </div>
+              </div>
+            </section>
+          </div>
+          <!--lets talk-->
+          <!--footer-->
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+<footer>
+  <p class="fp"><b><center> Follow Us <br>& Make it laste forver!!</center></b></p>
+  
+  <br>
+  <div class="rounded-social-buttons">
+                    <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+</footer>
+<!--footer-->
+        </body>
+    </head>
+</html>
