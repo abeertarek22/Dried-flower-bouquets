@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 
+            shop now
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <!--time --->
+<body onload="startTime()">
+
+
+
+<b><div id="txt"></div></b>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  
+  return i;
+}
+</script> 
+
+</body>
+<!---->
+        <!---content page1-->
+        <body> 
+                  
+    <img class="profile" src="photo1682880390.jpeg">
+    <br><br>
+    
+     <p class="p4">we use beautiful different types of flowers <br>you can choose any one of it.</p>
+     <section class="container">
+        <div class="card">
+          <div class="card-image  ">
+            <img src="shop1.jpeg">
+          </div>
+          <h2>Chunky vase</h2>
+          <p><b>large 60cm <br> pampas and dried flower<br><br><br>119$</b></p>
+        </div>
+        <div class="card">
+            <div class="card-image">
+              <img src="shop3.jpeg">
+            </div>
+            <h2>stoneware vase</h2>
+            <p><b>70cm white pampas grass <br>home decor <br><br><br>75$</b></p>
+        </div>
+        <div class="card">
+              <div class="card-image">
+                <img src="shop10.jpeg">
+              </div>
+              <h2>Boho wedding bouquet</h2>
+              <p><b>made from dried or preserved flowers,<br> make it lastes forever!!<br><br>88$</b></p>
+        </div>
+                <div class="card">
+                  <div class="card-image  ">
+                    <img src="shop11.jpeg">
+                  </div>
+                  <h2> nature dried palm </h2>
+                  <p><b>the perfect everlasting gifts or addition to your home.<br><br><br><br>from 90$ to 56$</b></p>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                      <img src="shop14.jpeg">
+                    </div>
+                    <h2>Boho wedding planner</h2>
+                    <p><b>use a combination of diffrent dried flower & textures<br>to create a boho effect for your wedding. <br><br> 350$</b></p>
+                </div>
+                <div class="card">
+                      <div class="card-image">
+                        <img src="shop15.jpeg">
+                      </div>
+                      <h2>unique Bridal shower</h2>
+                      <p><b>the best bridal shower favors are thoughtful & useful.<br><br><br><br>160$</b></p>
+                </div>
+                
+                <div>
+                  <br>
+                  <a href="#" class="show">Show More</a>
+                  
+                  
+                </div>
+      </section>
+      <!--content page1-->
+
+      <!--footer-->
+      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+
+<footer>
+  <p class="fp"><b><center> Follow Us <br>& Make it laste forver!!</center></b></p>
+  <br>
+  <div class="rounded-social-buttons">
+                    <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+</footer>
+    <!--footer--> 
+        </body>
+    </head>
+</html>      
